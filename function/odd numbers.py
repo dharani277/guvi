@@ -3,5 +3,5 @@
 def odd():
   for i in range(1,101):
     if(i%2!=0):
-      print("Odd Numbers are :",i)
+      print("Odd Number is:",i)
 odd()
