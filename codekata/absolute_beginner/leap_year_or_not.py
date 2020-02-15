@@ -10,7 +10,7 @@ def leap_year():
     return c
 # else condition check whether the value is not a leap year
   else:
-    c="N
+    c="N"
 # return not leap year
     return c
 # call the leap year function and store it in output
