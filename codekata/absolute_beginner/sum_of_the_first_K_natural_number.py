@@ -4,7 +4,7 @@ n=int(input())
 # define natural function
 def natural():
 # initialize c is equal to zero
-  sum1=0
+  sum=0
 # range from 1 to n using for loop
   for i in range(1,n+1):
 # sum of first k natural numbers
