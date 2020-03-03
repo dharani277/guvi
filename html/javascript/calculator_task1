@@ -1,0 +1,73 @@
+<html>
+<body>
+<table>
+<div class=title>calci</div>
+<tr>
+<input type="text" id="result">
+</tr>
+<tr>
+    <td><input type="button" id="C" value="C"></td>
+    <td><input type="button" id="0" value="0"></td>
+    <td><input type="button" id="/" value="/"></td>
+    <td><input type="button" id="*" value="*"></td>
+</tr>
+<tr>
+    <td><input type="button" id="7" value="7"></td>
+    <td><input type="button" id="8" value="8"></td>
+    <td><input type="button" id="9" value="9"></td>
+    <td><input type="button" id="-" value="-"></td>
+</tr>
+<tr>
+    <td><input type="button" id="4" value="4"></td>
+    <td><input type="button" id="5" value="5"></td>
+    <td><input type="button" id="6" value="6"></td>
+    <td><input type="button" id="+" value="+"></td>
+</tr>
+<tr>
+    <td><input type="button" id="1" value="1"></td>
+    <td><input type="button" id="2" value="2"></td>
+    <td><input type="button" id="3" value="3"></td>
+    <td><input type="button" id="=" value="="></td>
+</tr>
+<tr>
+    <td><input type="button" id="." value="."></td>
+</tr>
+<script src="programcalculator.js">
+</script>
+</table>
+</body>
+</html>
+
+document.getElementById("C").addEventListener("click",clear);
+document.getElementById("2").addEventListener("click",equation);
+document.getElementById("3").addEventListener("click",equation);
+document.getElementById("4").addEventListener("click",equation);
+document.getElementById("5").addEventListener("click",equation);
+document.getElementById("6").addEventListener("click",equation);
+document.getElementById("7").addEventListener("click",equation);
+document.getElementById("8").addEventListener("click",equation);
+document.getElementById("9").addEventListener("click",equation);
+document.getElementById("0").addEventListener("click",equation);
+document.getElementById("+").addEventListener("click",equation);
+document.getElementById("-").addEventListener("click",equation);
+document.getElementById("/").addEventListener("click",equation);
+document.getElementById("*").addEventListener("click",equation);
+document.getElementById("1").addEventListener("click",equation);
+document.getElementById(".").addEventListener("click",equation);
+document.getElementById("=").addEventListener("click",equal);
+function clear()
+{
+document.getElementById("result").value="";
+}
+function equation()
+{
+var a=this.value;
+document.getElementById("result").value+=a;
+}
+function equal()
+{
+var b=document.getElementById("result").value;
+var c=eval(b);
+document.getElementById("result").value=c;
+}
+
