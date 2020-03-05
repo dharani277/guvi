@@ -1,3 +1,4 @@
+// html
 <html>
 <body>
 <table>
@@ -37,6 +38,8 @@
 </table>
 </body>
 </html>
+
+//javascript
 
 document.getElementById("C").addEventListener("click",clear);
 document.getElementById("2").addEventListener("click",equation);
