@@ -11,7 +11,6 @@ inp.on("close",()=>{
     var a=userInput[0];
     var b=userInput[1].split(" ");
     var t;
-    var x=[];
     for(var i=0;i<a;i++)
     {
         for(var j=i+1;j<a;j++)
