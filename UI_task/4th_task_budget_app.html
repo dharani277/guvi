@@ -1,0 +1,230 @@
+<html>
+<head>
+</head>
+<style>
+    body
+    {
+        background-color:#f5f5f5f5;
+    }
+    h1{
+        margin-left: 31px;
+    }
+    * {
+  box-sizing: border-box;
+  }
+.border_green {
+border: 4px solid green;
+margin:30px;
+width:75%;
+border-radius:7px;
+}
+.border_red{
+
+   
+border: 4px solid red;
+margin:30px;
+width:75%;
+border-radius:7px;
+}
+.input1{
+      margin-left:17px;
+      margin-top:0px;
+      width:387px;
+      height:30px;
+    
+  border: solid green;
+  border-width: 0px;
+  outline-style: solid;
+  outline-color: green;
+}
+  
+.input2{
+      margin-left:17px;
+      margin-top:0px;
+      width:387px;
+    height:30px;
+    
+  border: 0px solid red;
+  outline-style: solid;
+  outline-color: red;
+}
+.input3{
+      margin-left:17px;
+      margin-top:0px;
+      width:387px;
+     height:30px;
+
+  border: 0px solid red;
+  outline-style: solid;
+  outline-color: red;
+}
+button {
+  border-style: solid;
+  border-color: green;
+  color: green;
+  background-color:#f5f5f5f5;
+  padding: 6px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius:7px;
+  
+}
+
+img {
+    vertical-align:middle;
+    border-style: none;
+    width: 70px;
+    height: 70px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%
+}
+.col-5 {
+    -ms-flex: 0 0 41.666667%;
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%
+}
+
+.col-7 {
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%
+}
+ul li {
+  
+  list-style-type: none;  
+  
+}
+</style>
+<body>
+    <h1>BUDGET APP</h1> 
+    <div class="row">
+        <div class="col-5" >
+<div class="border_green">
+    <p style="margin:17px">Please Enter Your Budget</p>
+    <input type="text" class="input1" id="mybudget"></input>
+    <button type="button" class="btn btn-outline-success" style="margin:17px"; onclick="budget()">Calculate</button>
+</div>
+    <div class="border_red" >
+        <p style="margin:17px" >Please Enter Your Expense</p>
+        <input type="text" class="input2" id="t"></input>
+        <p style="margin:17px">Please Enter Expense Amount</p>
+        <input type="text" class="input3"  id="price"></input>
+        <button type="button"  class="btn btn-outline-success" style="margin:17px;border-color: red;color: red;" onclick="app()">Add Expense</button>
+    </div>
+</div>
+    <div class="col-7">
+        <div class="row">
+      <div class="col-4">
+        <h2 class="text-center">BUDGET</h2>
+        &emsp;
+        <img src="C:\Users\Dharaneeswari\Desktop\images\cash.jpg"  >
+        
+       <h1> <p id="b" style="color:green;"> </p></h1>
+      </div>
+       <div class="col-4">
+        <h2 class="text-center">EXPENSES</h2>
+        &emsp;&emsp;
+        <img src="C:\Users\Dharaneeswari\Desktop\images\expenses.png">
+        
+        <h1><p id="c" style="color:red;"> </p></h1>
+     
+      </div>
+      <div class="col-4">
+        <h2 class="text-center">BALANCE</h2>
+        &emsp;&emsp;
+        <img src="C:\Users\Dharaneeswari\Desktop\images\doller.png" >
+        
+        <h1><p id="d" style="color:green;"></p></h1>
+      </div>
+    </div>
+      
+      <div class="row" id="r">
+      <div class="col-4">
+          <ul id="myUL">
+              <li><h4>Expense Title</h4> </li>
+              <li></li>
+          </ul>
+      </div>
+      <div class="col-4">
+        <ul  id="myUL2">
+            <li><h4>Expense Value</h4> </li>
+            <li></li>
+        </ul>
+    </div>
+      
+      
+
+      </div>
+      </div>
+      
+      
+    </div>
+    <script>
+        function budget() {
+    var total = document.getElementById("mybudget").value;
+    document.getElementById("b").innerHTML = "$ " + total;
+
+    var sum = p.reduce(function(a, b) {
+        return parseInt(a) + parseInt(b);
+    },0);
+
+    document.getElementById("c").innerHTML = "$ " + sum;
+    var rem = parseInt(total)- sum;
+    document.getElementById("d").innerHTML = "$ " + rem;
+
+}
+const p = [];
+
+function app() {
+    var li = document.createElement("li");
+    var product = document.getElementById("t").value;
+    var t1 = document.createTextNode(product);
+    li.appendChild(t1);
+
+    if (product === '') {
+        alert("You must write something!");
+    } else {
+        document.getElementById("myUL").appendChild(li);
+    }
+    var li = document.createElement("li");
+    var productprice = document.getElementById("price").value;
+    p.push(productprice);
+    var t2 =document.createTextNode(productprice);
+    li.appendChild(t2);
+    if (productprice === '') {
+        alert("You must write something!");
+    } else {
+        document.getElementById("myUL2").appendChild(li);
+    }
+
+}
+for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+        console.log("Delete Task...");
+
+        var listItem = this.parentNode;
+        var ul =listItem.parentNode;
+        ul.removeChild(listItem);
+
+    }
+}
+        
+ </script>
+</body>
+</div>
+</html>
