@@ -1,0 +1,22 @@
+// Given a number N and an array of N elements ,find the Bitwise AND of the array elements
+const readline = require('readline');
+const inp = readline.createInterface({
+  input: process.stdin
+});
+
+const userInput = [];
+
+inp.on("line", (data) => {
+	userInput.push(data);
+});
+
+inp.on("close", () => {
+    var a=userInput[0],c=[];
+    var c=userInput[1].split(" ")
+    var b=parseInt(c[0]);
+    for(var i=1;i<a;i++)
+    {
+        b=b&parseInt(c[i]);
+    }
+    console.log(b);
+    });
