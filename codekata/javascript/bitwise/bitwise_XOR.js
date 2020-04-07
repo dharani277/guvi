@@ -12,8 +12,8 @@ inp.on("line", (data) => {
 });
 
 inp.on("close", () => {
-    var a=userInput[0],c=[];
-    var c=userInput[1].split(" ")
+    var a=userInput[0];
+    var c=userInput[1].split(" ");
     var b=parseInt(c[0]);
     for(var i=1;i<a;i++)
     {
