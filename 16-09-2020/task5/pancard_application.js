@@ -174,7 +174,7 @@ function tableCreate1() {
   function tableCreate4() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -186,10 +186,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Last Name/Surname First Name Middle Name '))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -674,7 +674,7 @@ function tableCreate1() {
   function tableCreate18() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -688,10 +688,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Office Name (to be filled only in case of office address) '))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -709,7 +709,7 @@ function tableCreate1() {
   function tableCreate19() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -723,10 +723,9 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Flat/Door/Block No.'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -744,7 +743,7 @@ function tableCreate1() {
   function tableCreate20() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -758,10 +757,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+  td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Name of Premises/Building/Village'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -779,7 +778,7 @@ function tableCreate1() {
   function tableCreate21() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -793,10 +792,9 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+  td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Road/Street/Lane/Post Office'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -814,7 +812,7 @@ function tableCreate1() {
   function tableCreate22() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -828,10 +826,9 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Area/Locality/Taluka/Sub-Division'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -849,7 +846,7 @@ function tableCreate1() {
   function tableCreate23() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -863,10 +860,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+  td.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Town/City/District'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -884,7 +881,7 @@ function tableCreate1() {
   function tableCreate24() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -898,10 +895,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+  td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('State/Union Territory'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -919,7 +916,7 @@ function tableCreate1() {
   function tableCreate25() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -933,10 +930,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+         
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+  td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('PIN (Indicating PIN is mandatory)'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -954,7 +951,7 @@ function tableCreate1() {
   function tableCreate26() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -968,10 +965,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+  td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Country'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -989,7 +986,7 @@ function tableCreate1() {
   function tableCreate27() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -1003,10 +1000,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+        
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+  td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Zip'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1058,7 +1055,7 @@ function tableCreate1() {
   function tableCreate29() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -1072,10 +1069,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('11. Telephone No. (Country code is compulsory)'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1093,7 +1090,7 @@ function tableCreate1() {
   function tableCreate30() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -1107,10 +1104,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+         
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('E-mail ID'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1128,7 +1125,7 @@ function tableCreate1() {
   function tableCreate31() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -1142,10 +1139,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+         
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('In case of a citizen of India, then'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1163,7 +1160,7 @@ function tableCreate1() {
   function tableCreate32() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -1177,10 +1174,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('12. AADHAAR number:'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1198,7 +1195,7 @@ function tableCreate1() {
   function tableCreate33() {
     var body = document.getElementsByTagName('body')[0];
     var tbl = document.createElement('table');
-    tbl.style.width = '100%';
+    tbl.style.width = '80%';
     tbl.style.height = '30px';
     tbl.style.backgroundColor = 'lightgoldenrodyellow';
     tbl.style.borderCollapse = 'collapse';
@@ -1212,10 +1209,10 @@ function tableCreate1() {
         if (i == 2 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('Name as per AADHAAR letter or as per the enrollment ID of Aadhaar application form'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1316,10 +1313,10 @@ function tableCreate1() {
         if (i == 1 && j == 2) {
           break
         } else {
-          var td=[];
+          
           var td= document.createElement('td');
           var ts=document.createElement('ts');
-  
+          td.style.width='21px';
           td.appendChild(document.createTextNode(''))
           ts.appendChild(document.createTextNode('PAN1'))
           i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1351,10 +1348,10 @@ function tableCreate37() {
       if (i == 2 && j == 2) {
         break
       } else {
-        var td=[];
+       
         var td= document.createElement('td');
         var ts=document.createElement('ts');
-
+        td.style.width='21px';
         td.appendChild(document.createTextNode(''))
         ts.appendChild(document.createTextNode('PAN3'))
         i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1405,7 +1402,7 @@ tableCreate38();
 function tableCreate39() {
   var body = document.getElementsByTagName('body')[0];
   var tbl = document.createElement('table');
-  tbl.style.width = '100%';
+  tbl.style.width = '80%';
   tbl.style.height = '30px';
   tbl.style.backgroundColor = 'lightgoldenrodyellow';
   tbl.style.borderCollapse = 'collapse';
@@ -1419,10 +1416,10 @@ function tableCreate39() {
       if (i == 2 && j == 2) {
         break
       } else {
-        var td=[];
+        
         var td= document.createElement('td');
         var ts=document.createElement('ts');
-
+        td.style.width='21px';
         td.appendChild(document.createTextNode(''))
         ts.appendChild(document.createTextNode('I/We'))
         i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1474,7 +1471,7 @@ tableCreate40();
 function tableCreate41() {
   var body = document.getElementsByTagName('body')[0];
   var tbl = document.createElement('table');
-  tbl.style.width = '100%';
+  tbl.style.width = '80%';
   tbl.style.height = '30px';
   tbl.style.backgroundColor = 'lightgoldenrodyellow';
   tbl.style.borderCollapse = 'collapse';
@@ -1488,10 +1485,10 @@ function tableCreate41() {
       if (i == 2 && j == 2) {
         break
       } else {
-        var td=[];
+       
         var td= document.createElement('td');
         var ts=document.createElement('ts');
-
+        td.style.width='21px';
         td.appendChild(document.createTextNode(''))
         ts.appendChild(document.createTextNode('DD MM YYYY'))
         i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
@@ -1509,7 +1506,7 @@ tableCreate41();
 function tableCreate42() {
   var body = document.getElementsByTagName('body')[0];
   var tbl = document.createElement('table');
-  tbl.style.width = '100%';
+  tbl.style.width = '80%';
   tbl.style.height = '30px';
   tbl.style.backgroundColor = 'lightgoldenrodyellow';
   tbl.style.borderCollapse = 'collapse';
@@ -1523,10 +1520,10 @@ function tableCreate42() {
       if (i == 2 && j == 2) {
         break
       } else {
-        var td=[];
+        
         var td= document.createElement('td');
         var ts=document.createElement('ts');
-
+        td.style.width='21px';
         td.appendChild(document.createTextNode(''))
         ts.appendChild(document.createTextNode('I/We have enclosed'))
         i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
