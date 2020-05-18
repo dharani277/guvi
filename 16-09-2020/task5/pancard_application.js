@@ -327,7 +327,7 @@ function tableCreate6() {
   var radiobox = document.createElement('input');
       radiobox.type = 'check';
   tbl.style.width = '80%';
-  tbl.style.height = '25px';
+  tbl.style.height = '23px';
   tbl.style.backgroundColor = 'lightgoldenrodyellow';
   tbl.style.borderCollapse = 'collapse';
   tbl.setAttribute('border', '1');
@@ -540,7 +540,7 @@ function tableCreate12() {
         ts.style.color='blue';
         td.style.width='21px';
         td.appendChild(document.createTextNode(''))
-        ts.appendChild(document.createTextNode('Mothers Name (This field is optional.)'))
+        ts.appendChild(document.createTextNode('Mothers Name(This field is optional.)'))
         i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
         tr.appendChild(td)
         tr.appendChild(ts)
@@ -1807,8 +1807,7 @@ tbl.style.height = '30px';
 tbl.style.backgroundColor = 'lightgoldenrodyellow';
 tbl.style.borderCollapse = 'collapse';
 tbl.setAttribute('border', '1');
-var radiobox = document.createElement('input');
-    radiobox.type = 'check';
+
 var tbdy = document.createElement('tbody');
 for (var i = 0; i < 1; i++) {
   var tr = document.createElement('tr');
@@ -1821,11 +1820,11 @@ for (var i = 0; i < 1; i++) {
       var ts=document.createElement('ts');
       td.style.width='21px';
       td.appendChild(document.createTextNode(''))
-      ts.appendChild(document.createTextNode('DD MM YYYY'))
+      ts.appendChild(document.createTextNode('DD MM YYYY verified today, the 18-04-2020'))
       i == 1 && j == 1 ? td.setAttribute('rowSpan', '1') : null;
       tr.appendChild(td)
       tr.appendChild(ts)
-      tr.appendChild(radiobox);
+     
     }
   }
   tbdy.appendChild(tr);
@@ -2087,4 +2086,204 @@ tbl.appendChild(tbdy);
 body.appendChild(tbl)
 }
 tableCreate48();
-document.write("For Paperless PAN Application : <br> DSC Guidelines for DSC user <br> Upload Photo <br> Upload Document <br> ALREADY UPLOADED PHOTO: <br> ALREADY UPLOADED SIGNATURE:<br> ALREADY UPLOADED DOCUMENTS:");
+function bottom(){
+  var body = document.getElementsByTagName('body')[0];
+  var d = document.createElement('div');
+d.style.width = '80%';
+d.style.height = '20px';
+d.style.padding='2px'
+d.style.backgroundColor = 'lightgoldenrodyellow';
+body.appendChild(d);
+  var td= document.createElement('td');
+      var ts=document.createElement('ts');
+      var ts1=document.createElement('ts1');
+      var radiobox = document.createElement('input');
+    radiobox.type = 'radio';
+    var radiobox1 = document.createElement('input');
+    radiobox1.type = 'radio';
+      td.appendChild(document.createTextNode('For Paperless PAN Application :'))
+      ts.appendChild(document.createTextNode('Yes'))
+      ts1.appendChild(document.createTextNode('No'))
+      d.appendChild(td)
+      td.appendChild(radiobox)
+      td.appendChild(ts)
+      td.appendChild(radiobox1)
+      td.appendChild(ts1)
+}
+bottom();
+function bottom1(){
+  var body = document.getElementsByTagName('body')[0];
+  var d = document.createElement('div');
+d.style.width = '80%';
+d.style.height = '20px';
+d.style.padding='2px';
+d.style.backgroundColor = 'lightgoldenrodyellow';
+body.appendChild(d);
+      var ts=document.createElement('ts');
+    
+      var ts1=document.createElement('ts1');
+      var radiobox = document.createElement('input');
+    radiobox.type = 'radio';
+      ts.appendChild(document.createTextNode('DSC Guidelines for DSC user'))
+      d.appendChild(radiobox)
+      radiobox.appendChild(ts1)
+      d.appendChild(ts)
+}
+bottom1();
+function bottom2(){
+  var body = document.getElementsByTagName('body')[0];
+  var d = document.createElement('div');
+d.style.width = '80%';
+d.style.height = '20px';
+d.style.padding='2px';
+d.style.backgroundColor = 'lightgoldenrodyellow';
+body.appendChild(d);
+  var td= document.createElement('td');
+      var ts=document.createElement('ts');
+      var ts1= document.createElement('ts1');
+      var ts2=document.createElement('ts2');
+      var t1= document.createElement('t1');
+      var t2=document.createElement('t2');
+      var t=document.createElement('t')
+      var button = document.createElement("button");
+      button.innerHTML = "Choose file";
+      var button1 = document.createElement("button");
+      button1.innerHTML = "Choose file";
+      var radiobox = document.createElement('input');
+      radiobox.type = 'radio';
+    t.style.color='lightgoldenrodyellow';
+    t1.style.color='lightgoldenrodyellow';
+    t2.style.color='lightgoldenrodyellow';
+      td.appendChild(document.createTextNode(' Upload Photo'))
+      t.appendChild(document.createTextNode('-----------------------------------------'))
+      ts.appendChild(document.createTextNode('No file chosen'))
+      t1.appendChild(document.createTextNode('------------------------'))
+      ts1.appendChild(document.createTextNode('Upload Signature'))
+      t2.appendChild(document.createTextNode('--------'))
+      ts2.appendChild(document.createTextNode('No file chosen'))
+      d.appendChild(td)
+      td.appendChild(t)
+      td.appendChild(button)
+      td.appendChild(ts)
+      td.appendChild(t1)
+      td.appendChild(ts1)
+      td.appendChild(t2)
+      td.appendChild(button1)
+      td.appendChild(ts2)
+}
+bottom2();
+function bottom3(){
+  var body = document.getElementsByTagName('body')[0];
+  var d = document.createElement('div');
+d.style.width = '80%';
+d.style.height = '20px';
+d.style.padding='2px';
+d.style.backgroundColor = 'lightgoldenrodyellow';
+body.appendChild(d);
+  var td= document.createElement('td');
+      var ts=document.createElement('ts');
+      var t=document.createElement('t');
+      var button = document.createElement("button");
+      button.innerHTML = "Choose file";
+     
+     t.style.color='lightgoldenrodyellow';
+      td.appendChild(document.createTextNode(' Upload Document'))
+      t.appendChild(document.createTextNode('-----------------------------------.'))
+      ts.appendChild(document.createTextNode('No file chosen'))
+      
+      d.appendChild(td)
+      td.appendChild(t)
+      td.appendChild(button)
+      td.appendChild(ts)
+      
+      
+}
+bottom3();
+function bottom4(){
+  var body = document.getElementsByTagName('body')[0];
+  var d = document.createElement('div');
+d.style.width = '80%';
+d.style.height = '20px';
+d.style.padding='2px';
+d.style.backgroundColor = 'lightgoldenrodyellow';
+body.appendChild(d);
+  var td= document.createElement('td');
+  var t2= document.createElement('t2');
+  t2.style.color='lightgoldenrodyellow';
+      var radiobox = document.createElement('input');
+      radiobox.type = 'check';
+    
+      td.appendChild(document.createTextNode(' ALREADY UPLOADED PHOTO:'))
+      t2.appendChild(document.createTextNode('---------------'))
+      d.appendChild(td)
+      td.appendChild(t2)
+      td.appendChild(radiobox)
+     
+      
+      
+}
+bottom4();
+function bottom5(){
+  var body = document.getElementsByTagName('body')[0];
+  var d = document.createElement('div');
+d.style.width = '80%';
+d.style.height = '20px';
+d.style.padding='2px';
+d.style.backgroundColor = 'lightgoldenrodyellow';
+body.appendChild(d);
+  var td= document.createElement('td');
+  var t2= document.createElement('t2');
+  t2.style.color='lightgoldenrodyellow';
+      var radiobox = document.createElement('input');
+      radiobox.type = 'check';
+    
+      td.appendChild(document.createTextNode('ALREADY UPLOADED SIGNATURE:'))
+      t2.appendChild(document.createTextNode('--------'))
+      d.appendChild(td)
+      td.appendChild(t2)
+      td.appendChild(radiobox)
+      
+      
+      
+}
+bottom5();
+function bottom6(){
+  var body = document.getElementsByTagName('body')[0];
+  var d = document.createElement('div');
+d.style.width = '80%';
+d.style.height = '20px';
+d.style.padding='2px';
+d.style.backgroundColor = 'lightgoldenrodyellow';
+body.appendChild(d);
+  var td= document.createElement('td');
+  var t2= document.createElement('t2');   
+      var radiobox = document.createElement('input');
+      radiobox.type = 'check';
+      t2.style.color='lightgoldenrodyellow';
+      td.appendChild(document.createTextNode('ALREADY UPLOADED DOCUMENTS:'))
+      t2.appendChild(document.createTextNode('------'))
+      d.appendChild(td)
+      td.appendChild(t2)
+      td.appendChild(radiobox)
+     
+      
+      
+}
+bottom6();
+function bottom7(){
+  var body = document.getElementsByTagName('body')[0];
+  var d = document.createElement('div');
+d.style.width = '80%';
+d.style.height = '20px';
+d.style.padding='2px';
+d.style.backgroundColor = 'lightgoldenrodyellow';
+body.appendChild(d);
+  var td= document.createElement('td');
+     td.style.color='lightgoldenrodyellow';
+      var button = document.createElement("button");
+      button.innerHTML = "Submit";
+      td.appendChild(document.createTextNode('--------------------------------------------------------------------'))
+     d.appendChild(td)
+     td.appendChild(button)
+    }
+    bottom7();
