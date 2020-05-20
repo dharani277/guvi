@@ -4,7 +4,7 @@
     <h3 id="generate" style="text-align: center;"></h3>
 <script>
         function number(){
-        var a=(Math.floor(Math.random()*100000+1)).toString();
+        var a=(Math.floor(10000+Math.random()*90000)).toString();
 var b=a.split("");
 var count=0;
 var s=1;
@@ -24,7 +24,7 @@ for(var i=0;i<a.length;i++)
         }
         else
         {
-            s*=0;
+            s=0;
         }
         
     }
@@ -37,7 +37,7 @@ if(s==1)
 else
 {
     s=1;
-    var a=(Math.floor(Math.random()*100000+1)).toString();
+    var a=(Math.floor(10000+Math.random()*90000)).toString();
 var b=a.split("");
 }
 }
