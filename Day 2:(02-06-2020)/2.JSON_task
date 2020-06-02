@@ -443,6 +443,95 @@ console.log(obj);
  
  // Write a function called “transformGeekData” that transforms some set of data from one format to another.
  
+ var arr = [[['firstName', 'Vasanth'], ['lastName', 'Raja'], ['age', 24], ['role', 'JSWizard']], [['firstName', 'Sri'], ['lastName', 'Devi'], ['age', 28], ['role', 'Coder']]];
+// declare a function with the name of transformGeekData
+function transformGeekData(arr) {
+    var tranformEmployeeList = [];
+    for(var i=0;i<arr.length;i++){
+    var object={};
+    for(var j=0;j<arr[i].length;j++){
+    object[arr[i][j][0]]=arr[i][j][1];
+    }
+   tranformEmployeeList.push(object);
+    }
+    var result=tranformEmployeeList;
+    console.log(result);
+}
+// call the function as transformGeekData
+transformGeekData(arr);
+ 
+ // Problem 7
+ 
+ // Write an “assertObjectsEqual” function from scratch. Assume that the objects in question contain only scalar values (i.e., simple values like strings or numbers). It is OK to use JSON.stringify().
+
+ var expected = {foo: 5, bar: 6};
+var actual = {foo: 5, bar: 6}
+//declare a function with the name of assertObjectsEqual
+function assertObjectsEqual(actual, expected, testName)
+{
+var count=1;
+ for(var i in actual){
+     if(expected[i]!=actual[i])
+     {
+     count=1;
+     }
+     else 
+     {
+     count=0;
+     }
+ }
+ if(count==0)
+ {
+ console.log("Passed");
+ }
+ else
+ {
+     console.log("FAILED [my test] Expected ",expected,"but got", actual);
+ }
+}
+//call the function as assertObjectsEqual
+assertObjectsEqual(actual, expected, 'detects that two objects are equal');
+
+ 
+// Problem 8
+
+// I have a mock data of security Questions and Answers. You function should take the object and a pair of strings and should return if the quest is present and if its valid answer
+ 
+ var securityQuestions = [
+ {
+ question: "What was your first pet’s name?",
+ expectedAnswer: "FlufferNutter"
+ },
+ {
+ question: "What was the model year of your first car?",
+ expectedAnswer: "1985"
+ },
+ {
+ question: "What city were you born in?",
+ expectedAnswer: "NYC"
+ }
+]
+// declare a function with the name of chksecurityQuestions
+function chksecurityQuestions(securityQuestions,ques,ans) {
+    for(var i=0;i<securityQuestions.length;i++){
+        // if condition checks whether the question is match with ques and expectedAnswer  is match with ans, it return true else return false
+        if(securityQuestions[i].question==ques && securityQuestions[i].expectedAnswer==ans)
+        return true;
+        else 
+        return false;
+    }
+
+}
+//Test case1:
+var ques = "What was your first pet’s name?";
+var ans  =  "FlufferNutter";
+var status = chksecurityQuestions(securityQuestions, ques, ans);
+console.log(status); // true
+//Test case2:
+var ques = "What was your first pet’s name?";
+var ans  =  "DufferNutter";
+var status = chksecurityQuestions(securityQuestions, ques, ans);
+console.log(status); // flase
  
  // Problem 9
  
@@ -470,6 +559,3 @@ console.log(obj);
 }
 // print the list of characters below 20 age
 console.log(returnMinors(students));
- 
-
-
