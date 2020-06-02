@@ -1,0 +1,475 @@
+// Problem 0 : Part A
+
+// 1. Add height and weight to Fluffy
+
+// declare a function with the name as heightweight
+function heightweight(height,weight){
+// create an object with the variable name of cat 
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+};
+// add height and weight to Fluffy
+cat.height=height;
+cat.weight=weight;
+// print an object in the form of cat
+console.log(cat);
+}
+// call the function heightweight by passing parameter height and weight values
+heightweight(12,27);
+
+// 2.Fluffy name is spelled wrongly. Update it to Fluffyy
+
+
+// declare function name as updatename
+function updatename(){
+// create an object with the variable name of cat 
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ height:12,
+  weight:27,
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+}
+// Update name of the cat Fluffy into Fluffyy
+cat.name='Fluffyy';
+// print an object in the form of cat
+console.log(cat);
+}
+// call the function updatename
+updatename();
+
+// 3.List all the activities of Fluffyy’s catFriends.
+
+// declare function name as activity
+function activity(){
+// create an object with the variable name of cat 
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ height:12,
+  weight:27,
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+};
+// Update name of the cat Fluffy into Fluffyy
+cat.name='Fluffyy';
+// List all the activities of Fluffyy’s catFriends using for loop
+for(var i=0;i<cat.catFriends.length;i++)
+{
+console.log(cat.catFriends[i].activities);
+}
+}
+// call the function activity
+activity();
+
+// 4.Print the catFriends names.
+
+// declare function name as catfriendsname
+function catfriendsname()
+{
+// create an object with the variable name of cat 
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ height:12,
+  weight:27,
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+};
+// Update name of the cat Fluffy into Fluffyy
+cat.name='Fluffyy';
+// Print the catFriends names using for loop
+for(var i=0;i<cat.catFriends.length;i++)
+{
+console.log(cat.catFriends[i].name);
+}
+}
+// call the function catfriendsname
+catfriendsname();
+
+// 5.Print the total weight of catFriends
+
+// declare function name as totalweight
+function totalweight()
+{
+// create an object with the variable name of cat 
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ height:12,
+  weight:27,
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+};
+// Update name of the cat Fluffy into Fluffyy
+cat.name='Fluffyy';
+// Print the total weight of the catfriends using for loop
+var sum=0;
+for(var i=0;i<cat.catFriends.length;i++)
+{
+    sum=sum+cat.catFriends[i].weight;
+}
+console.log(sum);
+}
+// call the function totalweight
+totalweight();
+
+// 6.Print the total activities of all cats (op:6)
+
+// declare function name as totalactivity
+function totalactivity()
+{
+// create an object with the variable name of cat 
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ height:12,
+  weight:27,
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+};
+// Update name of the cat Fluffy into Fluffyy
+cat.name='Fluffyy';
+// Print the total activities of all cats using for loop
+var sum=0;
+first=cat.activities.length;
+for(var i=0;i<cat.catFriends.length;i++)
+{
+second=cat.catFriends[i].activities.length;
+sum=sum+second;
+}
+console.log(sum+first);
+}
+// call the function totalactivity
+totalactivity();
+
+// 7.Add 2 more activities to bar & foo cats
+
+// declare function name as addtwomore
+function addtwomore()
+{
+// create an object with the variable name of cat 
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ height:12,
+  weight:27,
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+};
+// Update name of the cat Fluffy into Fluffyy
+cat.name='Fluffyy';
+// Add 2 more activities to bar & foo cats
+cat.catFriends[0].activities[2]='eat fish';
+cat.catFriends[0].activities[3]='drink juice';
+console.log(cat.catFriends[0]);
+cat.catFriends[1].activities[2]='eat chicken';
+cat.catFriends[1].activities[3]='drink water';
+console.log(cat.catFriends[1]);
+}
+// call the function addtwomore
+addtwomore();
+
+// 8.Update the fur color of bar
+
+// declare function name as color
+function color()
+{
+// create an object with the variable name of cat 
+var cat = {
+ name: 'Fluffy',
+ activities: ['play', 'eat cat food'],
+ height:12,
+  weight:27,
+ catFriends: [
+ {
+ name: 'bar',
+ activities: ['be grumpy', 'eat bread omblet'],
+ weight: 8,
+ furcolor: 'white'
+ }, 
+ {
+ name: 'foo',
+ activities: ['sleep', 'pre-sleep naps'],
+ weight: 3
+ }
+ ]
+};
+// Update name of the cat Fluffy into Fluffyy
+cat.name='Fluffyy';
+// Update the fur color of bar
+cat.catFriends[0].furcolor='blue';
+console.log(cat);
+}
+// call the function color
+color();
+
+// Problem 0 : Part B
+
+// 1. Loop over the accidents array. Change atFaultForAccident from true to false.
+
+// declare function name as atFaultForAccidentfalse
+function atFaultForAccidentfalse()
+{
+// create an object with the variable name of myCar
+var myCar = {
+ make: 'Bugatti',
+ model: 'Bugatti La Voiture Noire',
+ year: 2019,
+ accidents: [
+ {
+ date: '3/15/2019',
+ damage_points: '5000',
+ atFaultForAccident: true
+ },
+ {
+ date: '7/4/2022',
+ damage_points: '2200',
+ atFaultForAccident: true
+ },
+ {
+ date: '6/22/2021',
+ damage_points: '7900',
+ atFaultForAccident: true
+ }
+ ]
+}
+// for loop over the accidents array. Change atFaultForAccident from true to false.
+for(var i=0;i<myCar.accidents.length;i++)
+{
+myCar.accidents[i].atFaultForAccident='false';
+}
+console.log(myCar);
+}
+// call the function atFaultForAccidentfalse
+atFaultForAccidentfalse();
+
+// 2. Print the dated of my accidents
+
+// declare function name as date
+function date()
+{
+// create an object with the variable name of myCar
+var myCar = {
+ make: 'Bugatti',
+ model: 'Bugatti La Voiture Noire',
+ year: 2019,
+ accidents: [
+ {
+ date: '3/15/2019',
+ damage_points: '5000',
+ atFaultForAccident: true
+ },
+ {
+ date: '7/4/2022',
+ damage_points: '2200',
+ atFaultForAccident: true
+ },
+ {
+ date: '6/22/2021',
+ damage_points: '7900',
+ atFaultForAccident: true
+ }
+ ]
+};
+// Print the dated of my accidents
+for(var i=0;i<myCar.accidents.length;i++)
+{
+console.log(myCar.accidents[i].date);
+}
+}
+// call the function date
+date();
+
+// Problem 1
+
+// Write a function called “printAllValues” which returns an newArray of all the input object’s values.
+
+// declare function name as printAllValues
+function printAllValues(obj) {
+    var obj = {
+        name : "RajiniKanth", age : 33, hasPets : false
+         };
+   var value= Object.values(obj);
+   console.log(value);
+}
+// call the function as printAllValues
+printAllValues(obj);
+
+// Problem 2
+
+// Write a function called “printAllKeys” which returns an newArray of all the input object’s keys
+
+// declare function name as printAllValues
+function printAllValues(obj) {
+    var obj = {
+        name : "RajiniKanth", age : 33, hasPets : false
+         };
+   var key= Object.keys(obj);
+   console.log(key);
+}
+// call the function as printAllValues
+printAllValues(obj);
+
+// Problem 3
+
+// Write a function called “convertObjectToList” which converts an object literal into an array of arrays.
+
+    var object = {name: "ISRO", age: 35, role: "Scientist"};
+    // declare function name as convertListToObject
+    function convertListToObject() {
+   var key= Object.entries(object);
+   console.log(key);
+}
+// call the function as convertListToObject
+convertListToObject()
+
+// Problem 4
+
+// Write a function ‘transformFirstAndLast’ that takes in an array, and returns an object with:
+1) the first element of the array as the object’s key, and
+2) the last element of the array as that key’s value.
+
+var arr = ["GUVI", "I", "am", "a geek"];
+ // declare function name as transformFirstAndLast
+function transformFirstAndLast(arr) {
+ var object = {};
+  arr.forEach(function(){
+  object[arr[0]] = arr[arr.length-1];
+      }
+  );
+  var result=object;
+  console.log(result);
+}
+// call the function as transformFirstAndLast
+transformFirstAndLast(arr);
+
+// Problem 5
+
+// Write a function “fromListToObject” which takes in an array of arrays, and returns an object with each pair of elements in the array as a key-value pair.
+
+var arr =[["make", "Ford"], ["model", "Mustang"], ["year", 1964]];
+// declare the function name as fromListToObject
+function fromListToObject(arr) {
+ var obj = {};
+  obj = Object.fromEntries(arr);
+console.log(obj);
+ }
+ // call the function as fromListToObject
+ fromListToObject(arr);
+ 
+ // Problem 6
+ 
+ // Write a function called “transformGeekData” that transforms some set of data from one format to another.
+ 
+ 
+ // Problem 9
+ 
+ // Write a function to return the list of characters below 20 age
+ 
+ var students = [
+ {
+ name: "Siddharth Abhimanyu", age: 21}, { name: "Malar", age: 25},
+ {name: "Maari",age: 18},{name: "Bhallala Deva",age: 17},
+ {name: "Baahubali",age: 16},{name: "AAK chandran",age: 23},   {name:"Gabbar Singh",age: 33},{name: "Mogambo",age: 53},
+ {name: "Munnabhai",age: 40},{name: "Sher Khan",age: 20},
+ {name: "Chulbul Pandey",age: 19},{name: "Anthony",age: 28},
+ {name: "Devdas",age: 56} 
+ ];
+ var count=[];
+ // declare a function with the name of returnMinors
+ function returnMinors()
+{
+    for(var i=0;i<students.length;i++)
+    if(students[i].age<20)
+    {
+        count.push(students[i]);
+    }
+        return count;
+}
+// print the list of characters below 20 age
+console.log(returnMinors(students));
+ 
+
+
