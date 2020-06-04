@@ -38,9 +38,3 @@ var add = array.map((number)=>{
  });
 // print the sum of all numbers in an array
  console.log(sum);
- 
- // 4.4. Return all the prime numbers in an array
-  
-
-
-
