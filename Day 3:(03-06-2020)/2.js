@@ -5,6 +5,7 @@
 // assign a value of an array
 var array=[1,2,3,4,5,6,7,8,9,10];
 var result=[];
+// declare anonymous function with the variable name of odd
 var odd=function(array)
 {
 for(var i=0;i<array.length;i++)
@@ -19,11 +20,33 @@ return result;
 // print odd numbers in an array
 console.log(odd(array));
 
+// 2.2. Convert all the strings to title caps in a string array
+
+// declare the variable name as string
+var string=["i am dharani"];
+var tcase;
+// declare anonymous function with the variable name of titleCase
+var titleCase=function(string)
+{
+ tcase = string.map((string)=>{
+   var result = string.toLowerCase().split(" ");
+    for(var i = 0; i< result.length; i++)
+    {
+     result[i] = result[i][0].toUpperCase() + result[i].slice(1);
+     }
+  // print all the strings to title caps in a string array
+ console.log(result.join(' '));
+   return result;
+   });
+};
+ titleCase(string);
+ 
 // 2.3. Sum of all numbers in an array
 
 // assign a value of an array
 var array=[1,2,3,4,5,6,7,8,9,10];
 var sum=0;
+// declare anonymous function with the variable name of add
 var add=function(array)
 {
 for(var i=0;i<array.length;i++)
@@ -35,6 +58,47 @@ return sum;
 // print sum of all numbers in an array
 console.log(add(array));
 
+// 2.4. Return all the prime numbers in an array
+
+// assign a value of an array
+var array = [2,3,4,5,6,7,8,9,10,11,12];
+var prime;
+// declare anonymous function with the variable name of PrimeNumber
+var PrimeNumber=function(array)
+{
+ prime = array.filter((number) => {
+  for (var i = 2; i <= Math.sqrt(number); i++) 
+  {
+    if (number % i === 0) 
+    return 0;
+  }
+  return 1;
+});
+ // print all the prime numbers in an array
+console.log(prime);
+}
+ PrimeNumber(array);
+
+// 2.5. Return all the palindromes in an array
+
+// // declare a set values in an array
+var array=["i","love", "my","dad"];
+var pal;
+// declare anonymous function with the variable name of palindrome
+var palindrome=function(array)
+{
+pal = array.filter((number)=>{
+var result=number.split("").reverse().join('');
+    for(var i=0;i<array.length;i++){
+    if(result==array[i])
+    return result;
+}
+  });
+ // print all the palindromes in an array
+console.log(pal);
+};
+ palindrome(array);
+ 
 // 2.6 Return median of two sorted arrays of same size
 
 // declare a set values in two sorted array
