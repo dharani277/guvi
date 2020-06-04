@@ -57,7 +57,7 @@ var result=number.split("").reverse().join('');
   });
     callback(); 
     }
-    function prime(){ 
+    function pal(){ 
    console.log(palindrome); 
    } 
- primeNumber(array,prime);     
+ primeNumber(array,pal);     
