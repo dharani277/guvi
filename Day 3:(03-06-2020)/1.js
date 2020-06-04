@@ -382,7 +382,6 @@ for(let el of ar1)
  {
  result.push(el);
  }
- 
  //Some piece of code goes here 
  result=ar1.concat(ar2);
  return result;
@@ -405,11 +404,49 @@ console.log(sumCSV('1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9'));
 
 // Create a function that will return in an array the first “nPrimes” prime numbers greater than a particular number “startAt”
 
+// declare the function with the name of getPrimes
+function getPrimes(nPrimes, startAt)
+{
+  var a=[];
+  for(var i=nPrimes;i<=startAt;i++)
+  { 
+    var not=1;
+      for(var j=2;j<=i;j++)
+      {
+        if(i%j===0 && j!==i){
+          not=0;
+        }
+}
+  if(not===1){
+    a.push(i);
+      }
+  }
+// print the print number between the ranges
+ console.log(a.join(" "));
+}
+getPrimes(10,100);
 
 
+// Print the first 100 prime numbers
 
-
-
-
-
-
+// declare function with the name of printPrimes
+function printPrimes(nPrimes)
+{
+  var a=[];
+  for(var i=2;i<=nPrimes;i++)
+  { 
+    var not=1;
+      for(var j=2;j<=i;j++)
+      {
+        if(i%j===0 && j!==i){
+          not=0;
+        }
+}
+  if(not===1){
+    a.push(i);
+      }
+  }
+// print the first 100 prime numbers
+ console.log(a.join(" "));
+}
+printPrimes(100);
