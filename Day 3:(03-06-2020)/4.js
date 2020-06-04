@@ -38,3 +38,34 @@ var add = array.map((number)=>{
  });
 // print the sum of all numbers in an array
  console.log(sum);
+
+// 4.4. Return all the prime numbers in an array
+
+// declare a set of values in an array
+var array = [2,3,4,5,6,7,8,9,10,11,12];
+// By using arrow function with filter method, find all the prime numbers in an array
+var prime = array.filter((number) => {
+  for (var i = 2; i <= Math.sqrt(number); i++) 
+  {
+    if (number % i === 0) 
+    return 0;
+  }
+  return 1;
+});
+// print all the prime numbers in an array
+console.log(prime);
+
+// 4.5 Return all the palindromes in an array
+
+// declare a set of strings in an array
+var array=["i","love", "my","dad"];
+// By using arrow function with filter method, find all the palindromes in an array
+var palindrome = array.filter((number)=>{
+var result=number.split("").reverse().join('');
+    for(var i=0;i<array.length;i++){
+    if(result==array[i])
+    return result;
+}
+  });
+// print all the palindromes in an array
+console.log(palindrome);
