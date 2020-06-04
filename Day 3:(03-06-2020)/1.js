@@ -387,3 +387,29 @@ for(let el of ar1)
  result=ar1.concat(ar2);
  return result;
 }
+
+// Calculate the sum of numbers received in a comma delimited string
+
+// declare the function with the name of sumCSV
+function sumCSV(s)
+{
+    var array=s.split("");
+    array.shift();
+    array.pop();
+    s=array.join("");
+    array=s.split(",").map(number=>+number);
+    return array.reduce((i, j) => i + j);
+}
+// print the sum of numbers received in a comma delimited string
+console.log(sumCSV('1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9'));
+
+// Create a function that will return in an array the first “nPrimes” prime numbers greater than a particular number “startAt”
+
+
+
+
+
+
+
+
+
