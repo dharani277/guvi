@@ -15,8 +15,8 @@
     <div id="grid"></div>
  <script>
       const rootElement = document.getElementById("grid");
-      const tdTag = ({ table }) => React.createElement("td", {className: "table table-bordered" ,style:{width:'150px',height:'80px',border: '3px solid black',bordercollapse:'separate',borderspacing: '10px'}}, table);
-      const thTag = ({ table }) => React.createElement("th", {className: "table table-bordered" ,style:{width:'150px',height:'80px',border: '3px solid black',bordercollapse:'separate',borderspacing: '10px'}}, table);
+      const tdTag = ({ table }) => React.createElement("td", {className: "table table-bordered" ,style:{width:'150px',height:'80px',border: '3px solid black'}}, table);
+      const thTag = ({ table }) => React.createElement("th", {className: "table table-bordered" ,style:{width:'150px',height:'80px',border: '3px solid black'}}, table);
       const trTag = ({ table }) => React.createElement("tr", {className: "table table-bordered" ,style:{width:'150px',height:'80px'}}, table);
       const tBodyTag = ({ table }) =>
       React.createElement("tbody", {}, table);
