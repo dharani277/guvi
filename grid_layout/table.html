@@ -4,61 +4,74 @@
     <meta charset="UTF-8" />
     <script
       crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
+      src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script
       crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
   </head>
   <body>
     <div id="grid"></div>
- <script>
+    <script>
       const rootElement = document.getElementById("grid");
-      const tdTag = ({ table }) => React.createElement("td", {className: "table table-bordered" ,style:{width:'150px',height:'80px',border: '3px solid black'}}, table);
-      const thTag = ({ table }) => React.createElement("th", {className: "table table-bordered" ,style:{width:'150px',height:'80px',border: '3px solid black'}}, table);
-      const trTag = ({ table }) => React.createElement("tr", {className: "table table-bordered" ,style:{width:'150px',height:'80px'}}, table);
-      const tBodyTag = ({ table }) =>
-      React.createElement("tbody", {}, table);
-      const tHeadTag = ({ table }) =>
-      React.createElement("thead", {}, table);
-      const tableTag = ({ table }) =>React.createElement("table", { },table);
-      const myRow = ({ fn, ln, email }) =>
+      const tdTag = ({ children }) =>
+        React.createElement(
+          "td",
+          {
+            className: "table table-bordered",
+            style: {
+              width: "150px",
+              height: "80px",
+              border: "3px solid black",
+            },
+          },
+          children
+        );
+      const thTag = ({ children }) =>
+        React.createElement(
+          "th",
+          {
+            className: "table table-bordered",
+            style: {
+              width: "150px",
+              height: "80px",
+              border: "3px solid black",
+            },
+          },
+          children
+        );
+      const trTag = ({ children }) =>
+        React.createElement(
+          "tr",
+          { className: "table table-bordered", style: {} },
+          children
+        );
+      const tBodyTag = ({ children }) =>
+        React.createElement("tbody", {}, children);
+      const tHeadTag = ({ children }) =>
+        React.createElement("thead", {}, children);
+      const tableTag = ({ children }) =>
+        React.createElement("table", {}, children);
+      const myRow = ({}) =>
         trTag({
-         table: [
-            tdTag({ }),
-            tdTag({  }),
-            tdTag({  }),
-            tdTag({})
-          ]
+          children: [tdTag({}), tdTag({}), tdTag({}), tdTag({})],
         });
-        ReactDOM.render(
+      ReactDOM.render(
         tableTag({
-         table: [
+          children: [
             tHeadTag({
-              table: trTag({
-               table: [
-                  thTag({  }),
-                  thTag({  }),
-                  thTag({  }),
-                  thTag({  })
-                ]
-              })
+              children: trTag({
+                children: [thTag({}), thTag({}), thTag({}), thTag({})],
+              }),
             }),
             tBodyTag({
-              table: [
+              children: [
                 trTag({
-                 table: [
-                    tdTag({  }),
-                    tdTag({  }),
-                    tdTag({  }),
-                    tdTag({  })
-                  ]
+                  children: [tdTag({}), tdTag({}), tdTag({}), tdTag({})],
                 }),
-                myRow({ }),   
-              ]
-            })
-          ]
+                myRow({}),
+              ],
+            }),
+          ],
         }),
         document.getElementById("grid")
       );
